@@ -12,7 +12,8 @@ canvas {
 }
 
 h1 {
-	color: #9e0041
+	font-size: 3em;
+	color: #9e0041;
 }
 
 #canvas canvas {

@@ -35,7 +35,7 @@ scene.add(light);
 
 
 //seconds hand
-const line1 = new THREE.BoxGeometry( 15, 0.6, 1 );
+const line1 = new THREE.BoxGeometry( 16, 0.6, 1 );
 const materialCube1 = new THREE.MeshBasicMaterial( {color: 0xf45c41} );
 const cube1 = new THREE.Mesh( line1, materialCube1 );
 scene.add( cube1 )
@@ -52,7 +52,7 @@ pivot1.add( cube1 );
 scene.add( pivot1 );
 
 //minute hand
-const line2 = new THREE.BoxGeometry( 11, 0.6, 1 );
+const line2 = new THREE.BoxGeometry( 14, 0.6, 1 );
 const materialCube2 = new THREE.MeshBasicMaterial( {color: 0x9e44e2} );
 const cube2 = new THREE.Mesh( line2, materialCube2 );
 scene.add( cube2 )
@@ -86,9 +86,9 @@ pivot3.add( cube3 );
 scene.add( pivot3 );
 
 setInterval(() => {
-    pivot1.rotateZ(-0.06);
-    pivot2.rotateZ(-0.02);
-    pivot3.rotateZ(-0.01);
+    pivot1.rotateZ(-0.08);
+    pivot2.rotateZ(-0.004);
+    pivot3.rotateZ(-0.00016);
     sphere.rotateY(0.1);
 }, 1000)
 
